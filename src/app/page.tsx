@@ -147,7 +147,6 @@ export default function MoveDiv() {
         style={{
             width: "11vw",
             height: "19vw",
-            background: "blue",
             border: "black",
             marginLeft: "70vw",
             marginTop: "10vw",
@@ -176,7 +175,6 @@ export default function MoveDiv() {
         style={{
             width: "11vw",
             height: "19vw",
-            background: "blue",
             border: "black",
             marginLeft: "45vw",
             marginTop: "55vw",
