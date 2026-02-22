@@ -13,7 +13,7 @@ export default function MoveDiv() {
     const [pos2, setPos2] = useState({ x: 45, y: 55 });
 
 
-    const move = (dir) => {
+    const move = (dir: string) => {
         setPos((prev) => ({
             x: (dir === "left" && (prev.x - UNIT) >= 0) ? prev.x - UNIT : (dir === "right" && (prev.x + UNIT) <= 90) ? prev.x + UNIT : prev.x,
                 y: (dir === "up" && (prev.y - UNIT) >= 0) ? prev.y - UNIT :  (dir === "down" && (prev.y + UNIT) <= 170) ? prev.y + UNIT : prev.y,
