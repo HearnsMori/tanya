@@ -12,6 +12,12 @@
 
 html,
 body {
+    overscroll-behavior: none;
+  /* Additional fixes for mobile layout */
+  height: 100%;
+  overflow: hidden; /* Or 'auto' if scrolling is needed inside */
+  position: fixed;
+  width: 100%;
   max-width: 100vw;
   overflow-x: hidden;
 }
