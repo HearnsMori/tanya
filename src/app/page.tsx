@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { useState, useEffect, useRef } from "react";
 import { useRouter } from 'next/navigation';
 import { motion } from "framer-motion";
@@ -30,14 +31,14 @@ export default function MoveDiv() {
     const maxSwipeDistance = 60; // Minimum pixels to qualify as a swipe
     const xmaxSwipeDistance = 90; // Minimum pixels to qualify as a swipe
 
-    const onTouchStart = (e) => {
+    const onTouchStart = (e: React.TouchEvent) => {
         setTouchEndX(0); // Reset touch end
         setTouchStartX(e.targetTouches[0].clientX);
         setTouchEndY(0); // Reset touch end
         setTouchStartY(e.targetTouches[0].clientY);
     };
 
-    const onTouchMove = (e) => {
+    const onTouchMove = (e: React.TouchEvent) => {
         setTouchEndX(e.targetTouches[0].clientX);
         setTouchEndY(e.targetTouches[0].clientY);
     }
